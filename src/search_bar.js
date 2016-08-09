@@ -18,6 +18,7 @@ class SearchBar extends Component {
 
 
 			<div>
+				<h1>{this.props.heading}</h1>
 				<label >{this.props.label}</label>
 				<input className="form-control" placeholder="Enter First Name" onChange={this.onInputChange} value={this.state.term}/>
 				Value of the input : {this.state.term}
