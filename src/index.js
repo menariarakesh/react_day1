@@ -10,10 +10,16 @@ import SearchBar from './search_bar';
 }*/
 
 class App extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {label: 'Search Term '}
+	}
+
 	render() {
 		return (
 			<div>
-				<SearchBar />
+				<SearchBar label={this.state.label}/>
 			</div>
 			);
 	}

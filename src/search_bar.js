@@ -15,7 +15,10 @@ class SearchBar extends Component {
 
 	render() {
 		return (
+
+
 			<div>
+				<label >{this.props.label}</label>
 				<input className="form-control" placeholder="Enter First Name" onChange={this.onInputChange} value={this.state.term}/>
 				Value of the input : {this.state.term}
 			</div>
