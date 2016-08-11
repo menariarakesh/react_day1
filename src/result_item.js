@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import LikeItem from './like_item';
 
 class ResultItem extends Component {
 
@@ -27,7 +28,11 @@ class ResultItem extends Component {
 					</p>
 				</div>
 
+				<LikeItem like={this.props.like} 
+					dislike={this.props.dislike} />
+
 			</li>
+			
 		);		
 
 			

@@ -13,8 +13,10 @@ class ResultList extends Component {
 
 		const results = this.props.results.map((result) => {
 			return(
-				<ResultItem heading={result.name}
-					comment={result.comment}
+				<ResultItem heading={result.name} 
+					comment={result.comment} 
+					like={result.like} 
+					dislike={result.dislike} 
 					key={result.id} />
 					)
 		});
